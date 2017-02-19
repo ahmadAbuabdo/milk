@@ -14,6 +14,7 @@ use App;
 
 class AboutUsController extends Controller
 {
+    
 
     /**
      * @var AboutUsRepository
