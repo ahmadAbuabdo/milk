@@ -4,34 +4,31 @@
 @section('content')
 
     <section id="contact-info">
-        <div class="center">                
-            <h2>How to Reach Us?</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-        </div>
+        
         <div class="gmap-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-5 text-center">
+                    <div class="col-md-6">
                         <div class="gmap">
                            <iframe width="100%" height="300" src="http://www.citymaps.ie/create-google-map/map.php?width=100%&amp;height=300&amp;hl=en&amp;q=%20Domino's%20Pizza%20As-Sakhrah%20Al-Musharrafah%20St.%20Amman%20Jordan+(%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D9%84%D9%8A%D8%A9)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/medir-distancia-area.html">Medir Distancias Mapa</a> en <a href="http://www.mapsdirections.info/">www.mapsdirections.info</a></iframe><br />
                         </div>
                     </div>
 
-                    <div class="col-sm-7 map-content">
+                    <div class="col-md-6 map-content">
                         <ul class="row">
                             <li class="col-sm-6">
                                 <address>
-                                    <h5>Head Office</h5>
-                                    <p>As-Sakhrah Al-Musharrafah St.</br> Amman Jordan</p>
-                                    <p>Phone:+962 6 4205 859 <br>
-                                    Email Address:info@arabaust.com</p>
+                                    <h5>{{@trans('contact_us.head_office')}}</h5>
+                                    <p>{{@trans('contact_us.dec_head')}}</br>{{@trans('contact_us.amman')}}</p>
+                                    <p>{{@trans('contact_us.phone')}}:+962 6 4205 859 <br>
+                                   {{@trans('contact_us.email')}}:info@arabaust.com</p>
                                 </address>
 
                                 <address>
-                                    <h5>Free Zone</h5>
-                                    <p>As-Sakhrah Al-Musharrafah St.</br> alzarqa Jordan</p>
-                                    <p>Phone:+962 6 4205 859 <br>
-                                    Email Address:info@arabaust.com</p>
+                                    <h5>{{@trans('contact_us.free_office')}}</h5>
+                                    <p>{{@trans('contact_us.dec_zarqa')}}</br> {{@trans('contact_us.zarqa')}}</p>
+                                    <p>{{@trans('contact_us.phone')}}:+962 6 4777611 <br>
+                                    {{@trans('contact_us.email')}}:info@arabaust.com</p>
                                 </address>
                             </li>
 
@@ -86,9 +83,9 @@
         </div><!--/.container-->
     </section><!--/#contact-page-->
 
-    <section id="bottom">
       
-             {!! Form::close() !!}S
+             {!! Form::close() !!}
+    <section id="bottom">
 
     </section><!--/#bottom-->
 @endsection

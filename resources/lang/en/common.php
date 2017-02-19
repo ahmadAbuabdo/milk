@@ -62,6 +62,7 @@ return [
     'title'                 =>'Title',
     'lat'                   =>'Lat',
     'long'                   =>'Long',
+    'view'                   =>'View',
 
 ];
 

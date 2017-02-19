@@ -62,7 +62,8 @@ return [
     'deleted'               => 'تم الحذف',
     'delete_success'        => 'تمت عملية الحذف بنجاح.',
     //----Delete popup----end
-    'cancle_delete'         =>'الغاء'
+    'cancle_delete'         =>'الغاء',
+    'view'                   =>'عرض',
 
 ];
 

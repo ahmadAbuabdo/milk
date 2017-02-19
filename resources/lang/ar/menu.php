@@ -7,7 +7,7 @@ return [
     'settings'              => 'الاعدادات',
     'site_settings'         => 'اعدادات الموقع',
     'site_about'            => 'عن التطبيق',
-    'site_terms'            => 'الشروط و الاحكام',
+    'site_quality'            => 'الجودة',
     'users'                 => 'المستخدمين',
     'permissions'           => 'الصلاحيات',
     'reports'               => 'التقارير',

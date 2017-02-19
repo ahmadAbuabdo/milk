@@ -15,9 +15,8 @@ return [
     'image'                 => 'Image',      
     'action'                => 'Action',
     'gallary'               => 'Gallary',  
-    'gall'                  =>'Gallery',
-
-
+    'gallary_decs'          => 'Gallaer Studio',
+    'gall'                  => 'Gallary',
 
 
 

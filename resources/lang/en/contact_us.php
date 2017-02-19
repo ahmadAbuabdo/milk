@@ -20,5 +20,18 @@ return [
     'subject'       =>'We listen carefully to your opinions and suggestions ...',
     'title_msj'     =>'Drop Your Message',
     'submit'        =>'Submit Message',
+    'head_office'    =>'Head Office',
+    'free_office'    =>'Free Zone',
+    'dec_head'      =>'As-Sakhrah Al-Musharrafah St.',
+    'dec_zarqa'      =>'Third Industrial cutter',
+    'amman'         =>'Amman Jordan',
+    'zarqa'         =>'Al zarqa Jordan',
+    'phone'         =>'Phone',
+    'email'         =>'Email Address',
+
+
+
+
+
 
 ];

@@ -11,6 +11,8 @@ use Admailer\Repositories\GallaryRepository;
 use Admailer\Models\Gallary;
 use Admailer\Models\Product;
 use Admailer\Models\SiteAbout;
+use Admailer\Models\SiteTerms;
+
 
 use App;
 
@@ -28,10 +30,10 @@ class PortalController extends Controller
      * @return Response
      */
     public function home()
-    { 
+    {  $aboutus = SiteAbout::findOrFail(1);
        $gallerys = Gallary::orderBy('id', 'desc')->get();
        // dd($gallerys);
-        return view('portal.home',compact('gallerys'));
+        return view('portal.home',compact('gallerys','aboutus'));
     }
     /**
      * Display a listing of the resource.
@@ -65,6 +67,13 @@ class PortalController extends Controller
     { 
       $products=  Product::where('status','=','1')->get();
       return view('portal.products', compact('products'));
+    }
+
+
+      public function quality()
+    { 
+      $quality=  SiteTerms::findOrFail(1);
+      return view('portal.quality', compact('quality'));
     }
 
 

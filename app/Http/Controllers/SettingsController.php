@@ -119,10 +119,9 @@ class SettingsController extends Controller
     }
 
     public function updateTerms(Request $request, $id)
-    {
-        SiteTerms::findOrFail($id)->update($request->all());
-        // When update terms, all franchisee user terms flag = 0
-        SiteTerms::where('terms', '=', '1')->update(['terms' => 0]);
+    // {           SiteTerms::findOrFail($id)->update($request->all());
+    //     // When update terms, all franchisee user terms flag = 0
+      {  $this->aboutCreator->update_term($request, $id);
         flash()->success(trans('terms.terms_updated'));
         return redirect(route('settings.terms'));
     }
@@ -143,18 +142,7 @@ class SettingsController extends Controller
 
 
 
-//     public function aboutus(StoreAboutUsRequest $request){
-//            $this->aboutCreator->store($request);
-//            flash()->success(@trans('about_us.created'));
-//            return redirect(route('settings.aboutus'));
-//     }
 
-//     public function updateAboutus(Request $request, $id)
-// {
-//         SiteAbout::findOrFail($id)->update($request->all());
-//         flash()->success(trans('about.about_updated'));
-//         return redirect(route('settings.about'));
-//     }
 
     
 

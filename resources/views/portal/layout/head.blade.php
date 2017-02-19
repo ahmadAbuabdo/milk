@@ -15,7 +15,11 @@
     <link href="/css/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/css/animate.min.css" rel="stylesheet">
     <link href="/css/css/prettyPhoto.css" rel="stylesheet">
-    <link href="/css/css/{{ App::getLocale() }}_main.css" rel="stylesheet">
+    @if(App::getLocale() == 'ar')
+        <link href="/css/css/ar_main.css" rel="stylesheet">
+    @else
+        <link href="/css/css/en_main.css" rel="stylesheet">
+    @endif
     <link href="/css/css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>

@@ -14,8 +14,10 @@
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
+                            {{-- {{ dd(Request::url('/portal')) }} --}}
+                            <?php $url = explode(App::getLocale(), Request::url('/portal')); ?>
                             
-                           <a href="<?= (App::getLocale() == 'en') ? '/ar/portal' : '/en/portal' ?>"><?= (App::getLocale() == 'en') ? 'AR' : 'EN' ?> </a>
+                           <a href="<?= (App::getLocale() == 'en') ? '/ar' . $url[1] : '/en' . $url[1] ?>"><?= (App::getLocale() == 'en') ? 'AR' : 'EN' ?> </a>
                        </div>
                     </div>
                 </div>
@@ -41,6 +43,8 @@
                         </li>
 
                         <li class="{{ (Route::currentRouteName() == 'portal.aboutus'     ? 'active' : '') }}" ><a href="{{route('portal.aboutus') }}">  @lang('menu.aboutus')</a></li>
+
+                        <li class="{{ (Route::currentRouteName() == 'portal.quality'     ? 'active' : '') }}" ><a href="{{route('portal.quality') }}">  @lang('menu.site_quality')</a></li>
                         <li class="{{ (Route::currentRouteName() == 'portal.product'     ? 'active' : '') }}"><a href="{{route('portal.product') }}">@lang('menu.products')</a></li>
                         <li class="{{ (Route::currentRouteName() == 'portal.gallery'     ? 'active' : '') }}"><a href="{{route('portal.gallery') }}">@lang('menu.gallary') </a></li>
                         <li class="{{ (Route::currentRouteName() == 'contactus.create'     ? 'active' : '') }}"><a href="{{route('contactus.create') }}">@lang('menu.contact')</a></li>                        

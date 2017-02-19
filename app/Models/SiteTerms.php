@@ -13,7 +13,11 @@ class SiteTerms extends BaseModel
      *
      * @var array
      */
-    protected $fillable = ['terms'];
+    protected $fillable = [
+        'en_terms',
+        'ar_terms',
+        'image'
+    ];
 
     /**
      * Bootstrap any application services.

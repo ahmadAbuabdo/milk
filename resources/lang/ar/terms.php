@@ -5,5 +5,7 @@ return [
     'terms_description'     => 'وصف الاعتراف القانوني',
     'default_description'   => 'يرجى إدخال وصف الاعتراف القانوني ...',
     'terms_updated'         => 'تم تعديل الاعتراف القانوني',
+         'quality'             => 'الجودة',
+
 ];
 

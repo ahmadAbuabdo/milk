@@ -7,7 +7,7 @@ return [
     'settings'              => 'Settings',
     'site_settings'         => 'Site Settings',
     'site_about'            => 'About',
-    'site_terms'            => 'Legal Acknowledgement',
+    'site_quality'            => 'Quality',
     'users'                 => 'Users',
     'permissions'           => 'Roles & Permissions',
     'reports'               => 'Reports',

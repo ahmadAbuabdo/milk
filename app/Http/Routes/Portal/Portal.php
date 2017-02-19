@@ -14,7 +14,10 @@ get('aboutus', [
     'uses' => 'Portal\PortalController@aboutus',
     'as' => 'portal.aboutus',
 ]);
-
+get('quality', [
+    'uses' => 'Portal\PortalController@quality',
+    'as' => 'portal.quality',
+]);
 get('product', [
     'uses' => 'Portal\PortalController@product',
     'as' => 'portal.product',
@@ -34,5 +37,8 @@ get('product/{id}/show', [
     'uses' => 'Portal\PortalController@showProduct',
     'as' => 'portal.show_product',
 ]);
+
+
+
 
 ?> 

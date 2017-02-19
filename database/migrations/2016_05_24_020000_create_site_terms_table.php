@@ -14,8 +14,10 @@ class CreateSiteTermsTable extends Migration
     {
         Schema::create('site_terms', function (Blueprint $table) {
             $table->increments('id');
-            $table->longText('terms');
+            $table->longText('ar_terms');
+            $table->longText('en_terms');
             $table->string('updated_by');
+            $table->string('image');
             $table->timestamps();
         });
     }

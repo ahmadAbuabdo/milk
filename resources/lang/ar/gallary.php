@@ -11,9 +11,10 @@ return [
     'title'                 => 'عنوان ',
     'surl'                  => 'الموقع',
     'image'                 => 'صورة اعلان',  
-    'gallary'                 => 'الاستديو',  
-    'action'                => 'الحدث',
+    'gallary'               => 'الاستديو',  
     'gall'                  =>'ملف الصور',
+    'gallary_decs'          => 'من شان الله ارحمني',
+    'action'                => 'الحدث',
 
     //----grid labels---- end
     
