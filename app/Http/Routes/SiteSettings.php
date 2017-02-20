@@ -42,6 +42,16 @@ put('terms/{id}', [
     'as' => 'settings.updateTerms',
     'permission' => 'settings'
 ]);
+get('relation', [
+    'uses' => 'SettingsController@relation',
+    'as' => 'settings.relation',
+    'permission' => 'settings'
+]);
+
+put('relation/{id}', [
+    'uses' => 'SettingsController@updateRelation',
+    'as' => 'settings.updateRelation',
+]);
 
 get('about', [
     'uses' => 'SettingsController@about',

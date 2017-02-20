@@ -5,6 +5,7 @@ namespace Admailer\Creators;
 use Carbon\Carbon;
 use Admailer\Models\SiteAbout;
 use Admailer\Models\SiteTerms;
+use Admailer\Models\Relation;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 use Admailer\Repositories\AboutUsRepository;
@@ -126,4 +127,8 @@ class AboutUsCreator {
 
     }
 
+
+
+
+     
 }

@@ -5,7 +5,7 @@
 
        
         <div class="card-header">
-            <h2><i class="zmdi zmdi-info-outline zmdi-hc-fw"></i> @lang('about.page_title')</h2>
+            <h2><i class="zmdi zmdi-file-text zmdi-hc-fw"></i> @lang('about.page_title') </h2>
         </div>
 
         <div class="card-body card-padding">
@@ -16,7 +16,8 @@
 
         <div class="card-body card-padding">
             
-            <!-- Terms & Conditions Form Input -->
+    
+            <!-- about & Conditions Form Input -->
             <div class="row">               
                 <div class="col-sm-10">
                     <div class="form-group">
@@ -29,7 +30,7 @@
             </div>
 
 
-            <!-- Terms & Conditions Form Input -->
+            <!-- about & Conditions Form Input -->
             <div class="row">               
                 <div class="col-sm-10">
                     <div class="form-group">

@@ -18,6 +18,10 @@ get('quality', [
     'uses' => 'Portal\PortalController@quality',
     'as' => 'portal.quality',
 ]);
+get('relation', [
+    'uses' => 'Portal\PortalController@relation',
+    'as' => 'portal.relation',
+]);
 get('product', [
     'uses' => 'Portal\PortalController@product',
     'as' => 'portal.product',

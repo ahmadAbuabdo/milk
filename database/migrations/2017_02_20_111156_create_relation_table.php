@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSiteAboutTable extends Migration
+class CreateRelationTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,10 @@ class CreateSiteAboutTable extends Migration
      */
     public function up()
     {
-        Schema::create('site_about', function (Blueprint $table) {
+        Schema::create('relation', function (Blueprint $table) {
             $table->increments('id');
-            $table->longText('en_about');
-            $table->longText('ar_about');
+            $table->longText('en_relation');
+            $table->longText('ar_relation');
             $table->string('updated_by');
             $table->string('image');
             $table->timestamps();
@@ -29,6 +29,6 @@ class CreateSiteAboutTable extends Migration
      */
     public function down()
     {
-        Schema::drop('site_about');
+        Schema::drop('relation');
     }
 }

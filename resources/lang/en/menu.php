@@ -34,6 +34,8 @@ return [
     'articles'              => 'Articles',
     'gallary'               => 'Gallery',
     'home'                  => 'Home',
+    'site_terms'            =>'Quality',
+    'relation'              =>'Our Relation',
 
 
 

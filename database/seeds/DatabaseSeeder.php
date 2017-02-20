@@ -21,6 +21,8 @@ class DatabaseSeeder extends Seeder
         $this->call('SiteSettingsTableSeeder');
         $this->call('SiteTermsTableSeeder');
         $this->call('UsersTableSeeder');
+        $this->call('RelationTableSeeder');
+
 
         $this->call('DbSeed');
 

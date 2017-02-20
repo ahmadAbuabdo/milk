@@ -12,6 +12,8 @@ use Admailer\Models\Gallary;
 use Admailer\Models\Product;
 use Admailer\Models\SiteAbout;
 use Admailer\Models\SiteTerms;
+use Admailer\Models\Relation;
+
 
 
 use App;
@@ -52,9 +54,22 @@ class PortalController extends Controller
      * @return Response
      */
     public function aboutus()
-    { 
+    {     
+        $relation=  Relation::findOrFail(1);
         $aboutus = SiteAbout::findOrFail(1);
-        return view('portal.aboutus',compact('aboutus'));
+        return view('portal.aboutus',compact('aboutus','relation'));
+    }
+
+
+     /**
+     * Display a listing of the resource.
+     *
+     * @return Response
+     */
+    public function relation()
+    { 
+        $relation = Relation::findOrFail(1);
+        return view('portal.relation',compact('relation'));
     }
 
 
@@ -75,6 +90,7 @@ class PortalController extends Controller
       $quality=  SiteTerms::findOrFail(1);
       return view('portal.quality', compact('quality'));
     }
+
 
 
      public function showProduct($id)

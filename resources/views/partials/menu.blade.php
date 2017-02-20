@@ -18,6 +18,8 @@
                         <li><a id="settings" class="" href="{{route('settings.index')}}">@lang('menu.site_settings')</a></li>
                         <li><a class="" href="{{route('settings.about')}}">@lang('menu.site_about')</a></li>
                         <li><a class="" href="{{route('settings.terms')}}"></i>@lang('menu.site_terms')</a></li>
+                       <li><a class="" href="{{route('settings.relation')}}"></i>@lang('menu.relation')</a></li>
+
                     </ul>
                 </li>
                 @endif

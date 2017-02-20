@@ -11,11 +11,13 @@ use Admailer\Models\SiteSettings;
 use Admailer\Models\SiteSecuirty;
 use Admailer\Models\SiteTerms;
 use Admailer\Models\SiteAbout;
+use Admailer\Models\Relation;
 use Admailer\Models\Clients;
 use Illuminate\Http\Request;
 use Admailer\Http\Requests\StoreAboutUsRequest;
 use Admailer\Http\Requests\UpdateAboutUsRequest;
 use Admailer\Creators\AboutUsCreator;
+use Admailer\Creators\RelationCreator;
 use Admailer\Http\Requests;
 use Admailer\Http\Controllers\Controller;
 
@@ -25,18 +27,22 @@ class SettingsController extends Controller
 {
 
 
+    /**
+     * @var RelationCreator
+     */
+    private $relationCreator;
 
 
-
- /**
+    /**
      * @var AboutUsCreator
      */
     private $aboutCreator;
 
 
-    public function __construct(AboutUsCreator $aboutCreator)
+    public function __construct(AboutUsCreator $aboutCreator,RelationCreator $relationCreator)
     {
        $this->aboutCreator = $aboutCreator;
+       $this->relationCreator=$relationCreator;
 
         $this->middleware('is.allowed');
     }
@@ -104,7 +110,6 @@ class SettingsController extends Controller
         $secuirty = SiteSecuirty::findOrFail(1);
         return view('settings.secuirty', compact('secuirty'));
     }
-
     public function updateSecuirty(SiteSecuirtyRequest $request, $id)
     {
         SiteSecuirty::findOrFail($id)->update($request->all());
@@ -119,11 +124,23 @@ class SettingsController extends Controller
     }
 
     public function updateTerms(Request $request, $id)
-    // {           SiteTerms::findOrFail($id)->update($request->all());
-    //     // When update terms, all franchisee user terms flag = 0
-      {  $this->aboutCreator->update_term($request, $id);
+    { 
+        $this->aboutCreator->update_term($request, $id);
         flash()->success(trans('terms.terms_updated'));
         return redirect(route('settings.terms'));
+    }
+
+    public function relation()
+    {
+        $relation = Relation::findOrFail(1);
+        return view('settings.relation', compact('relation'));
+    }
+
+    public function updateRelation(Request $request, $id)
+      {
+        $this->relationCreator->updateRelation($request, $id);
+        flash()->success(trans('terms.terms_updated'));
+        return redirect(route('settings.relation'));
     }
 
     public function about(Request $request)
