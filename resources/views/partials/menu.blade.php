@@ -45,7 +45,7 @@
                 
               
                 @if (isAllowed('pages'))
-                        <li class=""><a id="gallary" href="{{ route('gallary.index') }}"><i class="zmdi zmdi-pin"></i>@lang('menu.gallary')</a></li>
+                        <li class=""><a id="gallary" href="{{ route('gallary.index') }}"><i class="zmdi zmdi-camera-roll"></i>@lang('menu.gallary')</a></li>
                 @endif
 
 

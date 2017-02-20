@@ -64,7 +64,7 @@ $current_route = Request::route()->getName();
 ?>
 
     <div class="block-header">
-        <h2><li class="zmdi zmdi-format-align-justify"></li>      
+        <h2><li class="zmdi zmdi-camera-roll"></li>      
            @lang('gallary.page_title')
         </h2>
         <ul class="actions">
