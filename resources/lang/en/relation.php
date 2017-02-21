@@ -14,8 +14,6 @@ return [
     'image'                 => 'Image',      
     'action'                => 'Action',
     'company_name'          => 'Arab Australian Company',
-    'title_relation'        =>'our relationship with international organization ',
-
 
 
 

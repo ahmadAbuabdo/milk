@@ -316,6 +316,50 @@ input.search-form:hover {
   color: #fff;
 }
 
+/*.products_block {
+  overflow: hidden;
+}
+
+.products_block .pull-left p {
+      margin-left: 5px !important;
+    overflow: hidden;
+    height: 144px !important;
+    display: block;
+    margin-top: 21px;
+}
+
+.rightBlock {
+  width: 30%;
+}
+
+.textBlock padding {
+  width: 135%;
+}
+
+.products_block img {
+  padding: 17px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.products_block p {
+      margin-left: -212px;
+    overflow: hidden;
+    height: 144px !important;
+    display: block;
+    margin-top: 21px;
+}
+
+.products_block h3.text-center,
+.products_block .text-center{
+    text-align: center;
+    display: block;
+    background: #c52d2f !important;
+    color: #fff;
+    padding: 6px 0;
+    margin: 16px 16px;
+}*/
+
 .navbar-inverse .navbar-nav .dropdown-menu {
   background-color: rgba(0,0,0,.85);
   -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -2531,7 +2575,43 @@ shortcodes page css
 }
 
 
+/************************* productPage ******************************/
 
+.productBlock { 
+  margin-top: 15px;
+  border:1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.titleProducts {
+  background-color: hsl(359, 63%, 47%);
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.products_img {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.products_img img {
+  max-width: 100%;
+}
+
+.products_description {
+  color: hsl(0, 0%, 44%);
+  padding-top: 29px !important;
+}
+
+.no-padding {
+  padding: 0;
+ }
+
+/************************* End of productPage ******************************/
 
 .floatStyle {
   float:left;
@@ -2548,7 +2628,7 @@ shortcodes page css
   #main-slider .carousel .item.active {
     background-size:191% 100% !important;
 }
-
+}
 
 .img-left{
   float: right;
@@ -2561,8 +2641,4 @@ shortcodes page css
 .img_prod{
   padding: 17px;
 }
-/*
-.about{
-  height: 689px;
-  width: 100%;
-}*/
+
