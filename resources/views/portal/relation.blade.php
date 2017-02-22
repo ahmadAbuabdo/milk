@@ -10,7 +10,7 @@
 			</div><!--/#about-slider-->
 			<br>
 			<div class="center wow fadeInDown">
-				<h2>{{@trans('relation.title')}}</h2>
+				<h2>{{@trans('relation.page_title')}}</h2>
 				<p class="lead">{!! $relation[App::getLocale().'_relation'] !!}</p>
 			</div>
 			

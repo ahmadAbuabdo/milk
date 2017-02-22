@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'page_title'            => 'علاقاتنا الخارجية',
+    'page_title'            => 'علاقاتنا مع الخارج',
     'create_page_title'     => 'إضافة خبر',
     //----grid labels---- begin
     'id'                    => 'رقم', 

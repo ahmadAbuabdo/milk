@@ -13,7 +13,7 @@ return [
     'publish_date'          => 'Publish Date ',
     'image'                 => 'Image',      
     'action'                => 'Action',
-    'company_name'          => 'Arab Australian Company',
+    'company_name'          => 'Arab Australian Dairy Goods Pack. Co. Ltd.',
 
 
 

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'page_title'                => 'Our Relation',
+    'page_title'                => 'Our Relationship With International Organization',
     'create_page_title'         => 'Add Our Relation',
     //----grid labels---- begin
     'id'                    => 'ID',
