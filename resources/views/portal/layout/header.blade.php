@@ -42,9 +42,9 @@
 
                         </li>
 
-                        <li class="{{ (Route::currentRouteName() == 'portal.aboutus'     ? 'active' : '') }}" ><a href="{{route('portal.aboutus') }}">  @lang('menu.aboutus')</a></li>
+                        {{-- <li class="{{ (Route::currentRouteName() == 'portal.aboutus'     ? 'active' : '') }}" ><a href="{{route('portal.aboutus') }}">  @lang('menu.aboutus')</a></li>
 
-                        <li class="{{ (Route::currentRouteName() == 'portal.quality'     ? 'active' : '') }}" ><a href="{{route('portal.quality') }}">  @lang('menu.site_quality')</a></li>
+                        <li class="{{ (Route::currentRouteName() == 'portal.quality'     ? 'active' : '') }}" ><a href="{{route('portal.quality') }}">  @lang('menu.site_quality')</a></li> --}}
                         <li class="{{ (Route::currentRouteName() == 'portal.relation'     ? 'active' : '') }}" ><a href="{{route('portal.relation') }}">  @lang('menu.relation')</a></li>
                         <li class="{{ (Route::currentRouteName() == 'portal.product'     ? 'active' : '') }}"><a href="{{route('portal.product') }}">@lang('menu.products')</a></li>
                         <li class="{{ (Route::currentRouteName() == 'portal.gallery'     ? 'active' : '') }}"><a href="{{route('portal.gallery') }}">@lang('menu.gallary') </a></li>

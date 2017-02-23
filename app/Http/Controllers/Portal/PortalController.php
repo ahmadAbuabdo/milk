@@ -32,10 +32,13 @@ class PortalController extends Controller
      * @return Response
      */
     public function home()
-    {  $aboutus = SiteAbout::findOrFail(1);
-       $gallerys = Gallary::orderBy('id', 'desc')->get();
+    {     
+    $quality=  SiteTerms::findOrFail(1);
+    $relation = Relation::findOrFail(1); 
+    $aboutus = SiteAbout::findOrFail(1);
+    $gallerys = Gallary::orderBy('id', 'desc')->get();
        // dd($gallerys);
-        return view('portal.home',compact('gallerys','aboutus'));
+        return view('portal.home',compact('gallerys','aboutus','relation','quality'));
     }
     /**
      * Display a listing of the resource.

@@ -91,7 +91,6 @@
         <div class="container">
             <div class="center">
                <h2>{{@trans('gallary.gall')}}</h2>
-               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
 
 
@@ -100,7 +99,7 @@
                    @foreach($gallerys as $gallery)
                     <div class="portfolio-item wordpress html bootstrap col-xs-12 col-sm-4 col-md-3">
                         <div class="recent-work-wrap">
-                             <img class="img-responsive" src="{{ asset('/files/gallary/' . $gallery->id . '/' . $gallery->image) }}" style="" alt="{{ $gallery->name }}" >
+                             <img class="img-responsive" src="{{ asset('/files/gallary/' . $gallery->id  . '/' . 'thumb-' . $gallery->image) }}" style="" alt="{{ $gallery->name }}" >
                             <div class="overlay">
                                 <div class="recent-work-inner">
                                     <h3><a href="#">about image</a></h3>
@@ -124,35 +123,11 @@
 
     <section id="services" class="service-item">
             <div class="container">
-            <div class="center">
-               <h2>{{@trans('gallary.gall')}}</h2>
-               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-            </div>
-
-
-            <div class="row">
-                <div class="portfolio-items wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms"">
-                   @foreach($gallerys as $gallery)
-                    <div class="portfolio-item wordpress html bootstrap col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                             <img class="img-responsive" src="{{ asset('/files/gallary/' . $gallery->id . '/' . $gallery->image) }}" style="" alt="{{ $gallery->name }}" >
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">about image</a></h3>
-                                    <p>{{$gallery['title']}}</p>
-                                    @if(!empty($gallery->image))
-                                        @if(is_dir(public_path() . '/files/gallary/' . $gallery->id))
-
-                                         <a class="preview" href="{{ asset('/files/gallary/' . $gallery->id . '/' . $gallery->image) }}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                        @endif
-                                    @endif
-                                </div> 
-
-                            </div>
-                        </div>          
-                    </div><!--/.portfolio-item-->
-                    @endforeach
-                </div>
+            <div class="center colorStyle">
+               <h2>{{@trans('terms.quality')}}</h2>
+               <div class="col-lg-6 col-md-6 derctionRight-block">
+               <p class="lead">{!! $quality[App::getLocale().'_terms'] !!}</p></div>
+               <div class="imgblock col-lg-6 col-md-6"><img class="img-responsive wow fadeInDown about" src="{{ asset('/files/quality/' . $quality->id . '/' . $quality->image) }}" alt="{{ $quality->name }}"></div>
             </div>
         </div>
     </section><!--/#services-->
@@ -169,7 +144,7 @@
                             <div class="panel-heading active">
                               <h3 class="panel-title">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
-                                  Lorem ipsum dolor sit amet
+                                  {{@trans('relation.page_title')}}
                                   <i class="fa fa-angle-right pull-right"></i>
                                 </a>
                               </h3>
@@ -179,13 +154,45 @@
                               <div class="panel-body">
                                   <div class="media accordion-inner">
                                         <div class="pull-left">
-                                            <img class="img-responsive" src="/images/images/accordion1.png">
-                                        </div>
+                                            <img class="img-responsive wow fadeInDown about" src="{{ asset('/files/relation/' . $relation->id  . '/' . 'thumb-' . $relation->image) }}" alt="{{ $relation->name }}">                                        </div>
                                         <div class="media-body">
-                                             <h4>Adipisicing elit</h4>
-                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                            <p class="lead">{!! $relation[App::getLocale().'_relation'] !!}</p>
                                         </div>
                                   </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                                  {{@trans('terms.quality')}}
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseTwo1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                {!! $quality[App::getLocale().'_terms'] !!}
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                                  Lorem ipsum dolor sit amet
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseTwo1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
                               </div>
                             </div>
                           </div>

@@ -675,7 +675,7 @@ input.search-form:hover {
   height: 100%;
   opacity: 0;
   border-radius: 0;
-  background: #c52d2f;
+  background: #666666;
   color: #fff;
   vertical-align: middle;
   -webkit-transition: opacity 500ms;
@@ -697,7 +697,7 @@ input.search-form:hover {
 }
 
 .recent-work-wrap:hover .overlay {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 #services {
@@ -869,7 +869,7 @@ input.search-form:hover {
 }
 
 .panel-heading.active{
-  background: #1f1f20;
+  background: #077937;
 }
 
 .panel-heading.active .panel-title>a{
@@ -1984,7 +1984,7 @@ ul.social_icons li  a i{
 
 .form-group .form-control {
   padding: 7px 12px;
-  border-color:#f2f2f2;
+  border-color:#f2f2f2 slategray;
   box-shadow: none;
 }
 
@@ -2593,7 +2593,6 @@ shortcodes page css
 }
 
 .products_img {
-  border: 1px solid hsl(0, 0%, 80%);
   border-radius: 5px;
   margin: 10px 0;
 }
@@ -2642,3 +2641,10 @@ shortcodes page css
   padding: 17px;
 }
 
+.imgblock {
+  margin-top: 21px;
+}
+
+.colorStyle span {
+  color: #ffffff !important;
+}

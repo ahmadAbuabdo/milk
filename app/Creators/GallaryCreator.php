@@ -28,7 +28,7 @@ class GallaryCreator {
             // Image thumb
             $path = public_path() . '/files/gallary/' . $gallary->id . '/' . $imageName;
             $path_thumb = public_path() . '/files/gallary/' . $gallary->id . '/thumb-' . $imageName;
-            $image =  Image::make($path)->resize(200, 200)->save($path_thumb);
+            $image =  Image::make($path)->resize(150, 150)->save($path_thumb);
             return DB::table('gallary')->where('id', $gallary->id)->update(['image' => $imageName]);}
 
 

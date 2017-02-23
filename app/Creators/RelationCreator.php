@@ -44,7 +44,7 @@ class RelationCreator {
              // Image thumb
             $path = public_path() . '/files/relation/' . $relation->id . '/' . $imageName;
             $path_thumb = public_path() . '/files/relation/' . $relation->id . '/thumb-' . $imageName;
-            $image =  Image::make($path)->resize(200, 200)->save($path_thumb);
+            $image =  Image::make($path)->resize(130, 130)->save($path_thumb);
         } 
 
         return Relation::findOrFail($id)->update([
