@@ -14,6 +14,9 @@ return [
     'image'                 => 'Image',      
     'action'                => 'Action',
     'company_name'          => 'Arab Australian Company',
+      'en_relation'           =>'Relation Decreption in English ',
+     'ar_relation'           =>'Relation Decreption in Arabic ',
+
 
 
 

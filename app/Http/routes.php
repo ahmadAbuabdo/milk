@@ -1,11 +1,11 @@
 <?php
 Route::get('/', function () {
-    return redirect('en/dashboard');
+    return redirect('en/portal');
 });
 
 // Authentication routes...
-get('login', 'Auth\AuthController@getLogin')->name('login');
-post('login', 'Auth\AuthController@postLogin')->name('post_login');
+get('admin', 'Auth\AuthController@getLogin')->name('login');
+post('admin', 'Auth\AuthController@postLogin')->name('post_login');
 get('logout', 'Auth\AuthController@getLogout')->name('logout');
 
 // Password reset routes...
