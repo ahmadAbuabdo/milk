@@ -164,6 +164,9 @@
                           </div>
 
 
+
+
+
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h3 class="panel-title">
@@ -176,23 +179,6 @@
                             <div id="collapseTwo1" class="panel-collapse collapse">
                               <div class="panel-body">
                                 {!! $quality[App::getLocale().'_terms'] !!}
-                              </div>
-                            </div>
-                          </div>
-
-
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h3 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
-                                  Lorem ipsum dolor sit amet
-                                  <i class="fa fa-angle-right pull-right"></i>
-                                </a>
-                              </h3>
-                            </div>
-                            <div id="collapseTwo1" class="panel-collapse collapse">
-                              <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
                               </div>
                             </div>
                           </div>
